@@ -31,29 +31,29 @@
     <div class="favoris">
 
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="./vue/img/homme.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Pierre</h5>
+                <p class="card-text">Je m'appelle Pierre et j'ai 42 ans. Voici une carte qui me présente</p>
+                <a href="mailto:karimsebbah@etu.u-paris.fr" class="btn btn-primary">Me Contacter</a>
             </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="./vue/img/femme.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Paola</h5>
+                <p class="card-text">SJe m'appelle Paola et j'ai 34 ans. Voici une carte qui me présente</p>
+                <a href="mailto:karimsebbah@etu.u-paris.fr" class="btn btn-primary">Me Contacter</a>
             </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="./vue/img/homme.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Jacque</h5>
+                <p class="card-text">Je m'appelle Jacque et j'ai 62 ans. Voici une carte qui me présente.</p>
+                <a href="mailto:karimsebbah@etu.u-paris.fr" class="btn btn-primary">Me Contacter</a>
             </div>
         </div>
 
