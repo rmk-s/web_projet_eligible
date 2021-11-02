@@ -50,7 +50,7 @@ function new_user($nom, $prenom, $mail, $mdp){
         
         try{
             $commande= $pdo->prepare($sql);
-            $commande->bindParam(':mail', $email, PDO::PARAM_STR);            
+            $commande->bindParam(':mail', $mail, PDO::PARAM_STR);            
             $commande->bindParam(':mdp', $mdp, PDO::PARAM_STR);
             $commande->execute();
             
