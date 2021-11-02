@@ -13,11 +13,11 @@
     <h3> Accedez vos memories dès maintenant</h3>
     <nav>
         <ul>
-            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="index.php?controle=utilisateurControleur&action=accueil"> Home </a></li>
             <li> <a href="#"> Page 1 </a> </li>
             <li> <a href="#"> Page 2 </a> </li>
-            <li> <a href="#"> Page 3 </a></li>
-            <li> <a href="pageConnexion.html"> Mon compte </a></li>
+            <li> <a href="index.php?controle=utilisateurControleur&action=espaceUtilisateur"> Page 3 </a></li>
+            <li> <a href="index.php?controle=utilisateurControleur&action=espaceConnexion"> Mon compte </a></li>
 
         </ul>
     </nav>
