@@ -1,7 +1,7 @@
 <?php
 
 function verif_user($mail, $mdp){
-    require('connect.php');
+    require('model/connectBD.php');
 		$sql="select * from user where Mail=:mail and Mdp=:mdp"; 
 		
 		try {
@@ -23,9 +23,10 @@ function verif_user($mail, $mdp){
 }   
 
 function new_user($nom, $prenom, $mail, $mdp){
-        require('connectBD.php');
+        require('model/connectBD.php');
 
-        $requete="insert into user (Nom, Prenom, Mail, Mdp) values (:nom, :prenom, :mail, :mdp)";
+        $requete="INSERT INTO 'user'(ID, Nom, Prenom, Mail, Mdp) VALUES (:nom, :prenom, :mail, :mdp)";
+		
         
         try {
             $commande= $pdo->prepare($requete);

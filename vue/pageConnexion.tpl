@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Nom de la page à determiner </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./vue/css/style.css">
 </head>
 
 <header>
@@ -28,7 +28,7 @@
         <p>Pas de compte ? créez-vous en un en moins de 2min <a href="index.php?controle=utilisateurControleur&action=espaceInscription">en cliquant ici </a> </p>
     </div>
 
-    <form action="" method="POST">
+    <form action="index.php?controle=inscription" method="POST">
 
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
