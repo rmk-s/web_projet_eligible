@@ -44,5 +44,28 @@ function new_user($nom, $prenom, $mail, $mdp){
 		}
     }
 
+	function connexionUser($email, $mdp, &$profil){
+        require("modele/connect.php");
+        $sql="SELECT * FROM `client` WHERE email=:email AND mdp=:mdp";
+        
+        try{
+            $commande= $pdo->prepare($sql);
+            $commande->bindParam(':email', $email, PDO::PARAM_STR);            
+            $commande->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+            $commande->execute();
+            
+            if ($commande->rowCount() > 0) {  //compte le nb d'enregistrement
+				$profil = $commande->fetch(PDO::FETCH_ASSOC); //svg du profil
+				return true;
+			}
+			else {return false;} 
+        }
+		
+		catch (PDOException $e) {
+			echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
+			die(); // On arrête tout.
+		}  
+    }
+
 
 ?>

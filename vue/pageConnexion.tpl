@@ -28,7 +28,7 @@
         <p>Pas de compte ? créez-vous en un en moins de 2min <a href="index.php?controle=utilisateurControleur&action=espaceInscription">en cliquant ici </a> </p>
     </div>
 
-    <form action="index.php?controle=inscription" method="POST">
+    <form action="index.php?controle=utilisateurControleur&action=connexion" method="POST">
 
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
