@@ -44,13 +44,13 @@ function new_user($nom, $prenom, $mail, $mdp){
 		}
     }
 
-	function connexionUser($email, $mdp, &$profil){
-        require("modele/connect.php");
-        $sql="SELECT * FROM `client` WHERE email=:email AND mdp=:mdp";
+	function connexionUser($mail, $mdp, &$profil){
+        require("./model/connectBD.php");
+        $sql="SELECT * FROM `user` WHERE Mail=:mail AND Mdp=:mdp";
         
         try{
             $commande= $pdo->prepare($sql);
-            $commande->bindParam(':email', $email, PDO::PARAM_STR);            
+            $commande->bindParam(':mail', $email, PDO::PARAM_STR);            
             $commande->bindParam(':mdp', $mdp, PDO::PARAM_STR);
             $commande->execute();
             

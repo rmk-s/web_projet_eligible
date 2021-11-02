@@ -31,11 +31,11 @@
     <form action="index.php?controle=utilisateurControleur&action=connexion" method="POST">
 
         <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control" id="floatingInput" name="mail" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" name="mdp" placeholder="Password">
             <label for="floatingPassword">Password</label>
         </div>
 

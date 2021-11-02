@@ -47,7 +47,7 @@
             <label for="floatingPassword">Password</label>
         </div>
 
-        <button class="btn btn-primary" type="submit"> Se connecter </button>
+        <button class="btn btn-primary" type="submit"> S'inscrire </button>
     </form>
 
 </body>
