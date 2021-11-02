@@ -1,4 +1,4 @@
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -7,18 +7,18 @@
     padding: 1em 6em;
 }
 
-.navbar ul {
+nav ul {
     display: flex;
     justify-content: space-between;
     align-content: center;
 }
 
-.navbar li {
+nav li {
     list-style: none;
     padding-right: 20%;
 }
 
-.navbar a {
+nav a {
     text-decoration: none;
     color: #fff;
     padding-right: 2em;
@@ -26,7 +26,17 @@
     font-size: 1em;
 }
 
-.navbar a:hover {
+nav a:hover {
     color: rgb(10, 202, 216);
     letter-spacing: 2px;
+}
+
+.boutonConnexion {
+    margin: 10%, 45%, 10%, 45%;
+}
+
+.favoris {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
