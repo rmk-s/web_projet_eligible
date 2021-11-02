@@ -40,3 +40,9 @@ nav a:hover {
     justify-content: space-between;
     align-content: center;
 }
+
+.favorisUser {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
