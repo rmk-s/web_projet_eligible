@@ -5,12 +5,12 @@
     <meta charset="utf-8" />
     <title>Nom de la page à determiner </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./vue/css/style.css">
 </head>
 
 <header>
-    <h1> Mon site </h1>
-    <h3> Mon sous titre </h3>
+    <h1> Carte Personalisée </h1>
+    <h3> Créer votre carte personalisée </h3>
     <nav>
         <ul>
             <li> <a href="index.php?controle=utilisateurControleur&action=accueil"> Home </a></li>
@@ -26,7 +26,7 @@
 <body>
 
     <h3>
-        Trop de chose à ne pas oublier ? </br> Laissez nous vous les retenir à votre place ! </br>
+        Trop de chose à dire ? </br> Laissez nous vous créer votre identité à votre place ! </br>
     </h3>
     <div class="favoris">
 
