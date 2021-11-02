@@ -13,11 +13,11 @@
     <h3> Page de connexion </h3>
     <nav>
         <ul>
-            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="index.php?controle=utilisateurControleur&action=accueil"> Home </a></li>
             <li> <a href="#"> Page 1 </a> </li>
             <li> <a href="#"> Page 2 </a> </li>
-            <li> <a href="#"> Page 3 </a></li>
-            <li> <a href="pageConnexion.html"> Mon compte </a></li>
+            <li> <a href="index.php?controle=utilisateurControleur&action=espaceUtilisateur"> Page 3 </a></li>
+            <li> <a href="index.php?controle=utilisateurControleur&action=espaceConnexion"> Mon compte </a></li>
 
         </ul>
     </nav>
@@ -25,7 +25,7 @@
 
 <body>
     <div>
-        <p>Pas de compte ? créez-vous en un en moins de 2min <a href="pageInscription.html">en cliquant ici </a> </p>
+        <p>Pas de compte ? créez-vous en un en moins de 2min <a href="index.php?controle=utilisateurControleur&action=espaceInscription">en cliquant ici </a> </p>
     </div>
 
     <form action="" method="POST">
