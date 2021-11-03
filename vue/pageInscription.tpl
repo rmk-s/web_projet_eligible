@@ -35,6 +35,10 @@
             <label for="floatingInput">Nom</label>
         </div>
         <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingInput" name="num" placeholder="name@example.com">
+            <label for="floatingInput">numero_id</label>
+        </div>
+        <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" name="prenom" placeholder="name@example.com">
             <label for="floatingInput">Prenom</label>
         </div>

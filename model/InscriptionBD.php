@@ -22,15 +22,16 @@ function verif_user($mail, $mdp){
 		}
 }   
 
-function new_user($nom, $prenom, $mail, $mdp){
-        require('model/connectBD.php');
+function new_user($nom, $id, $prenom, $mail, $mdp){
+        require('./model/connectBD.php');
 
-        $requete="INSERT INTO 'user'(ID, Nom, Prenom, Mail, Mdp) VALUES (:nom, :prenom, :mail, :mdp)";
+        $requete="INSERT INTO 'user'(ID, Nom, Prenom, Mail, Mdp) VALUES ( :id, :nom, :prenom, :mail, :mdp)";
 		
         
         try {
             $commande= $pdo->prepare($requete);
             $commande->bindParam(':nom', $nom, PDO::PARAM_STR);
+			$commande->bindParam(':id', $id, PDO::PARAM_STR);
             $commande->bindParam(':prenom', $prenom, PDO::PARAM_STR);
             $commande->bindParam(':mail', $mail, PDO::PARAM_STR);
             $commande->bindParam(':mdp', $mdp, PDO::PARAM_STR);

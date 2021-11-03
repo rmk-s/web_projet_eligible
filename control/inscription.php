@@ -2,7 +2,7 @@
 
     function inscrire(){
         
-        $nom = isset($POST['num']) ? ($_POST['num']):'';
+        $num = isset($POST['num']) ? ($_POST['num']):'';
         $nom = isset($POST['nom']) ? ($_POST['nom']):'';
         $prenom = isset($POST['prenom']) ? ($_POST['prenom']):'';
         $mail = isset($POST['mail']) ? ($_POST['mail']):'';
