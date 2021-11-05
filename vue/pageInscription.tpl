@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./vue/css/style.css">
 </head>
 
+<style>
+ <?php require('css/style.css'); ?>
+</style>
+
 <header>
     <h1> Mon site </h1>
     <h3> Page d'inscription </h3>
     <nav>
-        <ul>
-            <li> <a href="index.php?controle=utilisateurControleur&action=accueil"> Home </a></li>
-            <li> <a href="#"> Page 1 </a> </li>
-            <li> <a href="#"> Page 2 </a> </li>
-            <li> <a href="index.php?controle=utilisateurControleur&action=espaceUtilisateur"> Page 3 </a></li>
-            <li> <a href="index.php?controle=utilisateurControleur&action=espaceConnexion"> Mon compte </a></li>
-
-        </ul>
-    </nav>
+  <a class="active" href="index.php?controle=UtilisateurControleur&action=accueil"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="index.php?controle=UtilisateurControleur&action=espaceConnexion""><i class="fa fa-fw fa-user"></i> Login</a>
+</nav>
 </header>
 
 <body>

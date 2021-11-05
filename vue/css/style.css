@@ -1,34 +1,28 @@
+header {
+    text-align: center;
+    background: #d44700;
+    color: white;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    background: #000;
-    color: #fff;
+    background: #164377;
     padding: 1em 6em;
+    width: 100%;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+#jumboAccueil {
+    margin: 2% 2%;
 }
 
-nav li {
-    list-style: none;
-    padding-right: 20%;
+#jumboAccueil h3 {
+    text-align: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    padding-right: 2em;
-    text-transform: uppercase;
-    font-size: 1em;
-}
-
-nav a:hover {
-    color: rgb(10, 202, 216);
-    letter-spacing: 2px;
+#jumboAccueil p {
+    text-align: center;
 }
 
 .boutonConnexion {
@@ -45,4 +39,21 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-content: center;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5%;
+    padding-top: 3%;
+    color: whitesmoke;
+    background-color: #164377;
+}
+
+.Container {
+    background-color: #edf8f8;
+    margin-top: 5%;
+    padding: 5%;
+    margin-bottom: 5%;
 }

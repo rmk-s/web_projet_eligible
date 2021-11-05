@@ -8,40 +8,46 @@
     <link rel="stylesheet" href="./vue/css/style.css">
 </head>
 
+<style>
+ <?php require('css/style.css'); ?>
+</style>
+
 <header>
     <h1> Mon site </h1>
     <h3> Page de connexion </h3>
     <nav>
-        <ul>
-            <li> <a href="index.php?controle=utilisateurControleur&action=accueil"> Home </a></li>
-            <li> <a href="#"> Page 1 </a> </li>
-            <li> <a href="#"> Page 2 </a> </li>
-            <li> <a href="index.php?controle=utilisateurControleur&action=espaceUtilisateur"> Page 3 </a></li>
-            <li> <a href="index.php?controle=utilisateurControleur&action=espaceConnexion"> Mon compte </a></li>
-
-        </ul>
-    </nav>
+  <a class="active" href="index.php?controle=UtilisateurControleur&action=accueil"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="index.php?controle=UtilisateurControleur&action=espaceConnexion""><i class="fa fa-fw fa-user"></i> Login</a>
+</nav>
 </header>
 
 <body>
-    <div>
-        <p>Pas de compte ? créez-vous en un en moins de 2min <a href="index.php?controle=utilisateurControleur&action=espaceInscription">en cliquant ici </a> </p>
-    </div>
+   
+    <div class="container" >
     
+        <h2 style="text-align: center";> Connectez-vous pour accéder à votre liste de films !</h2>
+		</br>
 
-    <form action="index.php?controle=utilisateurControleur&action=connexion" method="POST">
+        <form action="index.php?controle=utilisateurControleur&action=connexion" method="POST">
 
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" name="mail" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" name="mail" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" name="mdp" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <button class="btn btn-primary" type="submit"> Se connecter </button>
+        </form>
+
+        <div>
+        <p>Pas de compte ? créez-vous en un en moins de 2min <a href="index.php?controle=UtilisateurControleur&action=espaceInscription">en cliquant ici </a> </p>
         </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" name="mdp" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-        </div>
-
-        <button class="btn btn-primary" type="submit"> Se connecter </button>
-    </form>
+    </div>
 
 </body>
 
