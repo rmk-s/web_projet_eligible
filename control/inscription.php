@@ -22,7 +22,7 @@
                         $prenom=ucfirst(strtolower($prenom)); // on met la 1ère lettre du prénom en majuscule et le reste en minuscule
                         
                     $profil = array();    
-                    saveUser($nom, $prenom, $mail, $mdp, $profil); //On ajoute l'utilsateur dans notre base
+                    saveUser($nom, $prenom, $mail, $mdp); //On ajoute l'utilsateur dans notre base
                     $message="La connexion à fonctionner !";    
                     require("./vue/pageUser.tpl");
                     			
