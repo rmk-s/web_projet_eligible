@@ -1,7 +1,7 @@
 <?php
 
 	$hostname = "localhost";	//ou localhost
-	$base= "web_projet_eligible";
+	$base= "eligible_projet_php";
 	$loginBD= "root";	//ou "root"
 	$passBD="root";
 	//$pdo = null;

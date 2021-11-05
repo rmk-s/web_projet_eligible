@@ -1,5 +1,21 @@
 <?php
 
+function getConnection(){
+    $user = "root";
+    $pass = "root";
+
+    try {
+        $pdo = new PDO('mysql:host=localhost;dbname=web_projet_eligible', $user, $pass);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+        echo "connexion reussie ! <br>";
+    } catch (Exception $e) {
+        var_dump($e->getMessage());die();
+    }
+
+    return $pdo;
+}
+
 function verif_user($mail, $mdp){
     require('model/connectBD.php');
 		$sql="select * from user where Mail=:mail and Mdp=:mdp"; 
@@ -22,28 +38,20 @@ function verif_user($mail, $mdp){
 		}
 }   
 
-function new_user($nom, $id, $prenom, $mail, $mdp){
-        require('./model/connectBD.php');
 
-        $requete="INSERT INTO 'user'(ID, Nom, Prenom, Mail, Mdp) VALUES ( :id, :nom, :prenom, :mail, :mdp)";
-		
-        
-        try {
-            $commande= $pdo->prepare($requete);
-            $commande->bindParam(':nom', $nom, PDO::PARAM_STR);
-			$commande->bindParam(':id', $id, PDO::PARAM_STR);
-            $commande->bindParam(':prenom', $prenom, PDO::PARAM_STR);
-            $commande->bindParam(':mail', $mail, PDO::PARAM_STR);
-            $commande->bindParam(':mdp', $mdp, PDO::PARAM_STR);
-            $commande->execute();
 
-            return (verif_user($mail, $mdp));
-        }
-        catch(PDOException $e) {
-			echo utf8_encode( $requete . "<br>" . $e->getMessage());
-			die();
-		}
-    }
+	function saveUser($nom, $prenom, $mail, $mdp){
+		$pdo = getConnection();
+		$request = $pdo->prepare("INSERT INTO user (nom, prenom, mail, mdp) VALUES (:nom, :prenom, :mail, :mdp)");
+		$request->bindParam(':nom', $nom);
+		$request->bindParam(':prenom', $prenom);
+		$request->bindParam(':mail', $mail);
+		$request->bindParam(':mdp', $mdp);
+		//$result = $request->execute();
+		//return $result;
+	
+	}
+
 
 	function connexionUser($mail, $mdp, &$profil){
         require("./model/connectBD.php");

@@ -28,14 +28,15 @@
     <div>
         <p>Vous possedez un compte ? connectez vous <a href="index.php?controle=utilisateurControleur&action=espaceConnexion">en cliquant ici </a> </p>
     </div>
-    <form action="index.php?controle=inscription&action=inscrire" method="POST">
+    
+    <form action="index.php?controle=inscription&action=inscrire" method="post">
 
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingInput" name="nom" placeholder="name@example.com">
             <label for="floatingInput">Nom</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="number" class="form-control" id="floatingInput" name="num" placeholder="name@example.com">
+            <input type="number" class="form-control" id="floatingInput" name="id" placeholder="name@example.com">
             <label for="floatingInput">numero_id</label>
         </div>
         <div class="form-floating mb-3">
@@ -51,7 +52,7 @@
             <label for="floatingPassword">Password</label>
         </div>
 
-        <button class="btn btn-primary" type="submit"> S'inscrire </button>
+        <input class="btn btn-primary" type="submit" value="S'inscrire">
     </form>
 
 </body>

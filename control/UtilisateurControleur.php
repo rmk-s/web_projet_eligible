@@ -3,12 +3,13 @@
 function accueil()
 {
     require("./vue/accueil.tpl");
+    $msg = ' ';
 }
 
 function connexion(){ 
     $mail =  isset($_POST['mail']) ? ($_POST['mail']) : '';
     $mdp =  isset($_POST['mdp']) ? ($_POST['mdp']) : '';
-    $msg = '';
+    $msg = ' ';
     if (count($_POST) == 0)
         require("./vue/PageConnexion.tpl");
     else {
@@ -30,11 +31,13 @@ function connexion(){
 
 function espaceUtilisateur()
 {
+    $msg = ' ';
     require("./vue/pageUser.tpl");
 }
 
 function espaceInscription()
 {
+    $msg = ' ';
     require("./vue/pageInscription.tpl");
 }
 

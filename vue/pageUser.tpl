@@ -9,7 +9,7 @@
 </head>
 
 <header>
-    <h1> Bonjour vous etes connecté ! </h1>
+    <h1> Bonjour <?php echo $_SESSION['profil']['nom'];?> vous etes connecté ! </h1>
     <h3> Voici votre carte </h3>
     <nav>
         <ul>
@@ -32,7 +32,7 @@
         <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title"><?php echo $_SESSION['profil']['nom'];?></h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
