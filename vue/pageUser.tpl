@@ -24,6 +24,8 @@
 </header>
 
 <body>
+
+
     <div class="container" >
     
         <h2 style="text-align: center";> Bonjour <?php echo $_SESSION['profil']['nom'];?> ! 
@@ -59,6 +61,14 @@
             </div>
         </div>
     </div>
+
+    <div>
+    <form action="index.php?controle=UtilisateurControleur&action=afficherMesAmis" method="post">
+    <input type="text" class="form-control" placeholder="Entrez le mail de votre ami(e)" aria-label="Input group example" aria-describedby="btnGroupAddon">
+    <button class="btn btn-primary" type="submit"> Trouver mon ami(e)</button>
+    </form>
+  </div>
+</div>
 
 
 </body>

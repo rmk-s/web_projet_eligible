@@ -38,8 +38,6 @@ function verif_user($mail, $mdp){
 		}
 }   
 
-
-
 	function saveUser($nom, $prenom, $mail, $mdp){
 		$pdo = getConnection();
 		$request = $pdo->prepare("INSERT INTO user (nom, prenom, mail, mdp) VALUES (:nom, :prenom, :mail, :mdp)");
@@ -47,8 +45,8 @@ function verif_user($mail, $mdp){
 		$request->bindParam(':prenom', $prenom);
 		$request->bindParam(':mail', $mail);
 		$request->bindParam(':mdp', $mdp);
-		//$result = $request->execute();
-		//return $result;
+		$request->execute();
+		
 	
 	}
 
@@ -75,6 +73,5 @@ function verif_user($mail, $mdp){
 			die(); // On arrête tout.
 		}  
     }
-
 
 ?>
