@@ -38,40 +38,41 @@ function verif_user($mail, $mdp){
 		}
 }   
 
-	function saveUser($nom, $prenom, $mail, $mdp){
-		$pdo = getConnection();
-		$request = $pdo->prepare("INSERT INTO user (nom, prenom, mail, mdp) VALUES (:nom, :prenom, :mail, :mdp)");
-		$request->bindParam(':nom', $nom);
-		$request->bindParam(':prenom', $prenom);
-		$request->bindParam(':mail', $mail);
-		$request->bindParam(':mdp', $mdp);
-		$request->execute();
-		
+
+function ajt_User($nom, $prenom, $mail, $mdp){
+	$pdo = getConnection();
+	$request = $pdo->prepare("INSERT INTO user (Nom, Prenom, Mail, Id) VALUES (:nom, :prenom, :mail, :mdp)");
+	$request->bindParam(':nom', $nom);
+	$request->bindParam(':prenom', $prenom);
+	$request->bindParam(':mail', $mail);
+	$request->bindParam(':mdp', $mdp);
+	$result = $request->execute();
+	return $result;
+
+}
+
+function connexionUser($mail, $mdp, &$profil){
+	require("./model/connectBD.php");
+	$sql="SELECT * FROM `user` WHERE Mail=:mail AND Mdp=:mdp";
 	
-	}
-
-
-	function connexionUser($mail, $mdp, &$profil){
-        require("./model/connectBD.php");
-        $sql="SELECT * FROM `user` WHERE Mail=:mail AND Mdp=:mdp";
-        
-        try{
-            $commande= $pdo->prepare($sql);
-            $commande->bindParam(':mail', $mail, PDO::PARAM_STR);            
-            $commande->bindParam(':mdp', $mdp, PDO::PARAM_STR);
-            $commande->execute();
-            
-            if ($commande->rowCount() > 0) {  //compte le nb d'enregistrement
-				$profil = $commande->fetch(PDO::FETCH_ASSOC); //svg du profil
-				return true;
-			}
-			else {return false;} 
-        }
+	try{
+		$commande= $pdo->prepare($sql);
+		$commande->bindParam(':mail', $mail, PDO::PARAM_STR);            
+		$commande->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+		$commande->execute();
 		
-		catch (PDOException $e) {
-			echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
-			die(); // On arrête tout.
-		}  
-    }
+		if ($commande->rowCount() > 0) {  
+			$profil = $commande->fetch(PDO::FETCH_ASSOC); 
+			return true;
+		}
+		else {return false;} 
+	}
+	
+	catch (PDOException $e) {
+		echo utf8_encode("Echec de select : " . $e->getMessage() . "\n");
+		die(); 
+	}  
+}
+
 
 ?>
