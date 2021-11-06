@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Nom de la page à determiner </title>
+    <title> Ciné Tab's </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./vue/css/style.css">
 </head>
@@ -17,8 +17,8 @@
     <h3> Page de connexion </h3>
     <nav>
   <a class="active" href="index.php?controle=UtilisateurControleur&action=accueil"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> à venir 1</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> à venir 2</a>
   <a href="index.php?controle=UtilisateurControleur&action=espaceConnexion""><i class="fa fa-fw fa-user"></i> Login</a>
 </nav>
 </header>
@@ -40,7 +40,7 @@
                 <input type="password" class="form-control" id="floatingPassword" name="mdp" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
-            
+
             <button class="btn btn-primary" type="submit"> Se connecter </button>
         </form>
 

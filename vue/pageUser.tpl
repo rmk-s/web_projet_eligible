@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Bienvenue </title>
+    <title>Ciné Tab's </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./vue/css/style.css">
 </head>
@@ -14,11 +14,11 @@
 
 <header>
     <h1> Bonjour <?php echo $_SESSION['profil']['nom'];?> vous etes connecté ! </h1>
-    <h3> Voici votre carte </h3>
+    <h3> Voici vos films </h3>
     <nav>
   <a class="active" href="index.php?controle=UtilisateurControleur&action=accueil"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-search"></i> à venir 1</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> à venir 2</a>
   <a href="index.php?controle=UtilisateurControleur&action=espaceConnexion""><i class="fa fa-fw fa-user"></i> Login</a>
 </nav>
 </header>
@@ -62,12 +62,7 @@
         </div>
     </div>
 
-    <div>
-    <form action="index.php?controle=UtilisateurControleur&action=afficherMesAmis" method="post">
-    <input type="text" class="form-control" placeholder="Entrez le mail de votre ami(e)" aria-label="Input group example" aria-describedby="btnGroupAddon">
-    <button class="btn btn-primary" type="submit"> Trouver mon ami(e)</button>
-    </form>
-  </div>
+    
 </div>
 
 

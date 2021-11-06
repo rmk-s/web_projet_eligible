@@ -21,8 +21,8 @@
 
 <nav>
   <a class="active" href="index.php?controle=UtilisateurControleur&action=accueil"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i> à venir 1</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> à venir 2</a>
   <a href="index.php?controle=UtilisateurControleur&action=espaceConnexion""><i class="fa fa-fw fa-user"></i> Login</a>
 </nav>
 </header>
