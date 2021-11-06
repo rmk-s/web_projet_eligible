@@ -26,7 +26,7 @@
 <body>
    
     <div class="container" >
-    
+
         <h2 style="text-align: center";> Connectez-vous pour accéder à votre liste de films !</h2>
 		</br>
 
@@ -40,7 +40,7 @@
                 <input type="password" class="form-control" id="floatingPassword" name="mdp" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
-
+            
             <button class="btn btn-primary" type="submit"> Se connecter </button>
         </form>
 
