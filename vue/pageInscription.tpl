@@ -24,36 +24,38 @@
 </header>
 
 <body>
-
-    <div>
-        <p>Vous possedez un compte ? connectez vous <a href="index.php?controle=utilisateurControleur&action=espaceConnexion">en cliquant ici </a> </p>
-    </div>
+    <div class="container" >
     
-    <form action="index.php?controle=inscription&action=inscrire" method="post">
+        <h2 style="text-align: center";> Inscrivez-vous pour créer votre liste de films !</h2>
+		</br>
+    
+        <form action="index.php?controle=inscription&action=inscrire" method="post">
 
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" name="nom" placeholder="name@example.com">
-            <label for="floatingInput">Nom</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="number" class="form-control" id="floatingInput" name="id" placeholder="name@example.com">
-            <label for="floatingInput">numero_id</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" name="prenom" placeholder="name@example.com">
-            <label for="floatingInput">Prenom</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" name="mail" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" name="mdp" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-        </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="nom" placeholder="name@example.com">
+                <label for="floatingInput">Nom</label>
+            </div>
+            
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="prenom" placeholder="name@example.com">
+                <label for="floatingInput">Prenom</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" name="mail" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" name="mdp" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
 
-        <input class="btn btn-primary" type="submit" value="S'inscrire">
-    </form>
+             <button class="btn btn-primary" type="submit"> S'inscrire </button>
+        </form>
+
+        <div>
+            <p>Vous possedez un compte ? connectez vous <a href="index.php?controle=utilisateurControleur&action=espaceConnexion">en cliquant ici </a> </p>
+        </div>
+    </div>
 
 </body>
 

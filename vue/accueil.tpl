@@ -33,21 +33,20 @@
     <h3 class="display-4"> Vous avez regardé trop de films & Series ? </h3>
     <p class="lead">   Laissez nous vous créer votre tableau de Film & Series deja vue ! </br> Ce service vous permettra d'avoir l'ensemble de vos films deja vue.</p>
   </div>
-</div>
     
-    <div class="favoris">
+    <div class="favorisUser">
 
         <div class="card" style="width: 18rem;">
-            <img src="./vue/img/homme.jpg" class="card-img-top" alt="...">
+            <img src="./vue/img/fastfurius.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Fast&Furius 1</h5>
+                <h5 class="card-title">Fast&Furius 7</h5>
                 <p class="card-text">UN FILM INCROYABLE !'</p>
                 
             </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="./vue/img/femme.jpg" class="card-img-top" alt="...">
+            <img src="./vue/img/harryPotter.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Harry Potter</h5>
                 <p class="card-text">Film culte, c'est un classique</p>
@@ -56,14 +55,14 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="./vue/img/homme.jpg" class="card-img-top" alt="...">
+            <img src="./vue/img/myson.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">My Son</h5>
                 <p class="card-text">Intéressant mais sans plus </p>
                 
             </div>
         </div>
-
+    </div>
     </div>
 
 </body>
