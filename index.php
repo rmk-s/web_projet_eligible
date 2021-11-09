@@ -10,6 +10,6 @@ else {
 	$action= "accueil";
 	}
 
-	require ('./control/' . $controle . '.php');   
+	require ('./controle/' . $controle . '.php');   
 	$action (); 
 ?>

@@ -41,7 +41,7 @@ function verif_user($mail, $mdp){
 
 function ajt_User($nom, $prenom, $mail, $mdp){
 	$pdo = getConnection();
-	$request = $pdo->prepare("INSERT INTO user (Nom, Prenom, Mail, Id) VALUES (:nom, :prenom, :mail, :mdp)");
+	$request = $pdo->prepare("INSERT INTO user (Nom, Prenom, Mail, mdp) VALUES (:nom, :prenom, :mail, :mdp)");
 	$request->bindParam(':nom', $nom);
 	$request->bindParam(':prenom', $prenom);
 	$request->bindParam(':mail', $mail);
